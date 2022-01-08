@@ -1,0 +1,305 @@
+/* reset css */
+* {
+    /* EMMET */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-family: Inconsolata, sans-serif;
+}
+
+/* main css */
+
+.mgt-64 {
+    margin-top: 64px;
+}
+
+.mgt-8 {
+    margin-top: 8px;
+
+}
+
+.mgt-16 {
+    margin-top: 16px;
+}
+
+.mgt-18 {
+    margin-top: 18px;
+}
+
+.mgt-32 {
+    margin-top: 32px;
+}
+
+/* style css */
+#header{
+    display: block;
+    width: 100%;
+    background-color: #000;
+    position: fixed;/* để giữa header khi cuộn chuột */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    padding: 4px 16px;
+    align-items: center;
+}
+
+#nav li {
+    display: block;
+    float: left;
+    width: calc(100% / 4);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+#nav li a:hover {
+    color: #000;
+    background-color: #fff;
+    opacity: 0.8;
+
+}
+
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 46px;
+    padding: 8px 150px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%; /* 50% chiều ngang của chính nó */
+    width: 100%;
+    background: url(../assets/img/coffeehouse.jpg) top center / cover no-repeat;
+}
+
+#about {
+    padding: 32px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-header {
+    font-size: 18px;
+    font-weight: 400;
+    width: max-content;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+
+.about-description,
+.about-sub-description {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 18px;
+    padding: 16px;
+
+}
+
+.about-description {
+    
+}
+
+.about-sub-description {
+    background-color: #f1f1f1;
+    border-left: 5px solid #ccc ;    
+}
+
+#about img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+#about strong {
+    filter: contrast(100%);
+}
+
+/* menu */
+
+#menu {
+    padding: 32px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-header{
+    font-size: 18px;
+    font-weight: 400;
+    width: max-content;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+
+.menu-nav{
+    display: flex;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%),
+    0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.menu-btn {
+    width: calc(100% / 2);
+    text-align: center;
+    color: #000;
+    padding: 8px 0;
+    margin: 4px 8px;
+}
+
+.menu-btn:hover {
+    background-color: #ccc;
+}
+
+.menu-eat-btn{
+
+}
+
+.menu-drink-btn{
+    
+}
+
+.menu-list{
+    list-style: none;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%),
+    0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding-top: 32px;
+    padding-left: 18px;
+}
+
+.menu-list:last-child {
+    padding-bottom: 64px;
+}
+/* 
+.menu-drink {
+    display: none;
+} */
+
+.menu-food {
+    display: block;
+}
+
+.menu-item{
+    margin-top: 32px;
+    display: inline-block;
+    width: 100%;
+}
+
+.menu-list-header{
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.menu-list-text{
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.the-cup-img {
+    width: 100%;
+    filter: grayscale(60%);
+}
+
+/* where to find us: */
+
+#where {
+    padding: 32px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#where p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.fly {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.where-header {
+    font-weight: 400;
+    width: max-content;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+
+.where-img {
+    width: 100%;
+
+}
+
+.where-input {
+    width: 100%;
+    display: block;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+.where-btn {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.where-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+#footer {
+    width: 100%;
+    padding: 60px 0;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#footer a {
+    text-transform: none;
+}
+
+.open {
+    display: block;
+}
